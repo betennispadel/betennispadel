@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+● <!DOCTYPE html>
   <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -19,6 +19,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+      }
+
+      .brand {
+        text-align: center;
+      }
+
+      .brand h1 {
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: 8px;
+      }
+
+      .brand span {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #666;
       }
 
       .button-group {
@@ -62,10 +89,17 @@
   </head>
   <body>
 
-    <div class="button-group">
-      <a href="privacypolicy.html">Privacy Policy</a>
-      <a href="terms.html">Terms & Conditions</a>
-      <a href="account-deletion.html">Account Deletion</a>
+    <div class="container">
+      <div class="brand">
+        <h1>Be Tennis App</h1>
+        <span>Play • Book • Compete</span>
+      </div>
+
+      <div class="button-group">
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="account-deletion.html">Account Deletion</a>
+      </div>
     </div>
 
     <footer>
