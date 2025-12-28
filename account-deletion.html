@@ -1,54 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Account Deletion | Be Tennis & Padel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #ffffff;
-      color: #333;
-      padding: 24px;
-      max-width: 700px;
-      margin: auto;
-    }
-    h1 {
-      color: #dc3545;
-    }
-    .box {
-      background: #f8f9fa;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Account Deletion | Be Tennis & Padel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<h1>Account & Data Deletion</h1>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        background: #fff;
+        color: #000;
+        padding: 48px 24px 100px;
+        max-width: 720px;
+        margin: auto;
+        line-height: 1.7;
+      }
 
-<p>You have the right to request deletion of your Be Tennis & Padel account and associated personal data.</p>
+      .back-link {
+        display: inline-block;
+        margin-bottom: 40px;
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid #000;
+        padding-bottom: 2px;
+        transition: opacity 0.2s;
+      }
 
-<div class="box">
-  <h2>How to Request Account Deletion</h2>
-  <p>Please send an email from your registered email address to:</p>
-  <p><strong>📧 info@btennispadel.com</strong></p>
-  <p>Include the subject line: <strong>Account Deletion Request</strong></p>
-</div>
+      .back-link:hover {
+        opacity: 0.6;
+      }
 
-<h2>What Happens Next?</h2>
-<ul>
-  <li>Your account will be permanently deleted</li>
-  <li>Your personal data will be removed from our systems</li>
-  <li>Requests are processed within <strong>30 days</strong></li>
-</ul>
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+        border-left: 4px solid #000;
+        padding-left: 16px;
+      }
 
-<p>If you have any questions, contact us at the same email address.</p>
+      .intro {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 40px;
+        padding-left: 20px;
+      }
 
-<footer style="margin-top:40px;font-size:14px;color:#666;">
-  © 2025 Be Tennis & Padel
-</footer>
+      .box {
+        background: #000;
+        color: #fff;
+        padding: 32px;
+        margin-bottom: 40px;
+      }
 
-</body>
-</html>
+      .box h2 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        letter-spacing: -0.5px;
+      }
+
+      .box p {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+
+      .box .email {
+        display: inline-block;
+        background: #fff;
+        color: #000;
+        padding: 12px 20px;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 12px 0;
+      }
+
+      .box .subject {
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 8px 16px;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+
+      h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: -0.5px;
+      }
+
+      ul {
+        list-style: none;
+        margin-bottom: 40px;
+      }
+
+      ul li {
+        padding: 16px 0;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      ul li::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #000;
+        display: inline-block;
+        flex-shrink: 0;
+      }
+
+      ul li strong {
+        font-weight: 700;
+      }
+
+      .note {
+        background: #f5f5f5;
+        border-left: 4px solid #000;
+        padding: 20px 24px;
+        font-size: 15px;
+        color: #333;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        color: #000;
+        padding: 16px;
+        border-top: 1px solid #000;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <h1>Account & Data Deletion</h1>
+    <p class="intro">You have the right to request deletion of your Be Tennis & Padel account and associated personal data.</p>
+
+    <div class="box">
+      <h2>How to Request Account Deletion</h2>
+      <p>Please send an email from your registered email address to:</p>
+      <span class="email">info@btennispadel.com</span>
+      <p>Include the subject line:</p>
+      <span class="subject">Account Deletion Request</span>
+    </div>
+
+    <h2>What Happens Next?</h2>
+    <ul>
+      <li>Your account will be <strong>permanently deleted</strong></li>
+      <li>Your personal data will be <strong>removed from our systems</strong></li>
+      <li>Requests are processed within <strong>30 days</strong></li>
+    </ul>
+
+    <div class="note">
+      If you have any questions, contact us at <strong>info@btennispadel.com</strong>
+    </div>
+
+    <footer>
+      © 2025 Be Tennis & Padel
+    </footer>
+
+  </body>
+  </html>
